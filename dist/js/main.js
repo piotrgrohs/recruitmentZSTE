@@ -329,6 +329,8 @@ jQuery(document).ready(function($) {
   };
   OnePageNavigation();
 
+  
+
 });
 
 //carousel
@@ -370,3 +372,10 @@ $rightControl.on('click', function(){
 $(window).resize(function(){
  $slides.width($(window).width()).height($(window).height);
 });
+
+$(function () {
+    $('.fadein div:gt(0)').hide();
+    setInterval(function () {
+      $('.fadein :first-child').fadeOut().next('div').fadeIn().end().appendTo('.fadein');
+     }, 5000);
+  });

@@ -299,7 +299,7 @@ jQuery(document).ready(function($) {
     });
   };
   scrollWindow();
-
+  
 
   // navigation
   var OnePageNavigation = function() {
@@ -329,4 +329,6 @@ jQuery(document).ready(function($) {
   };
   OnePageNavigation();
 
+
 });
+
